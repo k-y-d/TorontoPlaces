@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".LoginActivity"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="User Name"
+            android:layout_marginLeft="@dimen/edit_text_margin"
+            android:layout_marginTop="@dimen/login_margin_top"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/edit_text_margin"
+            android:layout_marginRight="@dimen/edit_text_margin"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Password"
+            android:layout_marginLeft="@dimen/edit_text_margin"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPassword"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/edit_text_margin"
+            android:layout_marginRight="@dimen/edit_text_margin"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:lines="1"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/loginErrorMessage"
+            android:text=""
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="@dimen/edit_text_margin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/buttonLogin"
+            android:paddingLeft="@dimen/login_button_padding"
+            android:paddingRight="@dimen/login_button_padding"
+            android:layout_marginTop="@dimen/login_button_top_margin"
+            android:layout_gravity="center_horizontal" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:indeterminate="true"
+            android:layout_marginTop="@dimen/login_button_top_margin"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+    </LinearLayout>
